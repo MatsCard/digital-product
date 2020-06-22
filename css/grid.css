@@ -1,0 +1,68 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, fr);
+  grid-template-areas: "header header header" "bulbasaur description-bulbasaur description-bulbasaur" "description-charmander description-charmander charmander" "squirtle description-squirtle description-squirtle";
+  /* justify-content: center; */
+  justify-items: center;
+  align-items: center;
+  grid-gap: 50px;
+  padding: 50px 0 50px 0;
+}
+
+
+.bulbasaur{
+  grid-area: bulbasaur;
+}
+
+.description-bulbasaur {
+  grid-area: description-bulbasaur;
+}
+
+.charmander{
+  grid-area: charmander;
+}
+
+.description-charmander {
+  grid-area: description-charmander;
+
+}.squirtle{
+  grid-area: squirtle;
+}
+
+.description-squirtle {
+  grid-area: description-squirtle;
+}
+
+.pkm_img {
+  margin: 0;
+  padding: 0;
+}
+
+.pkm_img img {
+
+  max-width: 150px;
+}
+
+[class*=description-] {
+  color: var(--black-color);
+}
+
+[class*=description-] h1{
+  font-size: 3em;
+}
+
+[class*=description-] p{
+  font-size: 1.5em;
+}
+
+.header h1 {
+  color: var(--black-color);
+  font-size: 4em;
+
+}
+
+.header {
+  grid-area: header;
+}

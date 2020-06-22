@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    height: auto;
+    margin-top: auto;
+    max-height: initial;
+  }
+
+  .product {
+    margin-top: auto;
+  }
+
+  .main_section {
+    padding: 4%;
+  }
+
+  .description-products, .mentions, nav, nav ul{
+    flex-direction: column;
+  }
+
+}
